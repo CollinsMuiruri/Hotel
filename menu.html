@@ -1,0 +1,159 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css?family=Acme&display=swap" rel="stylesheet">
+    <title>Hotel</title>
+</head>
+<body>
+        <nav>
+                <div class="logo">
+                    <h4>hotel</h4>
+                </div>
+                <ul class="nav-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="staff.html">Staff</a></li>
+                    <li><a href="menu.html">Menu</a></li>
+                    <!-- <li><a href="projects.html">Projects</a></li> -->
+                </ul>
+                <div class="burger">
+                    <div class="line1"></div>
+                    <div class="line2"></div>
+                    <div class="line3"></div>
+                </div>
+            </nav>    
+<style>
+    table {
+        border-collapse: collapse;
+        width: 100%;
+        margin-left: 10px;
+        font-size: 20px;
+    }
+    
+    th, td {
+        padding: 8px;
+        text-align: left;
+        border-bottom: 1px solid #ddd;
+    }
+    h2 {
+        text-align: center;
+    }
+    th {
+        color: yellowgreen;
+    }
+    
+    tr:hover {background-color:#f5f5f5;}
+    </style>
+                
+    <h2>Menu.</h2>
+    
+    <table>
+        <tr>
+        <th>Food</th>
+        <!-- <th>Position</th> -->
+        <th>Price</th>
+        </tr>
+        <tr>
+        <td>Pilau</td>
+        <!-- <td>Manager</td> -->
+        <td>130/=</td>
+        </tr>
+        <tr>
+        <td>Chapo madondo</td>
+        <!-- <td>Waiter</td> -->
+        <td>100/=</td>
+        </tr>
+        <tr>
+        <td>Ugali matumbo</td>
+        <!-- <td>Head Cook</td> -->
+        <td>120/=</td>
+        </tr>
+        <tr>
+        <td>Saccotache</td>
+        <!-- <td>Taster</td> -->
+        <td>150/=</td>
+        </tr>
+    </table>
+
+
+    <div class="container">
+
+        <!-- main row -->
+        <div class="row">
+            <!-- form column -->
+            <div class="col-xs-12 col-sm-12 col-md-6">
+                <form  id="contacts">
+                    <h2>Personal Information</h2>
+                    <!-- firtname -->
+                    <div class="form-group">
+                        <label for="fname">Firstname</label>
+                        <input type="text" placeholder="John" class="form-control" id="fname" required="">
+                    </div>
+                    <!-- lastname -->
+                    <div class="form-group">
+                        <label for="lname">Lastname</label>
+                        <input type="text" placeholder="Doe" class="form-control" id="lname" required="">
+                    </div>
+                    <!-- address section -->
+                    <div id="address">
+                      <h2>Address of Order</h2>
+                      <!-- street -->
+                      <div class="form-group">
+                          <label for="street">Street</label>
+                          <input type="text" placeholder="street" class="form-control street" required="">
+                      </div>
+                      <!-- city -->
+                      <div class="form-group">
+                          <label for="city">City</label>
+                          <input type="text" placeholder="city" class="form-control city" required="">
+                      </div>
+                      <!-- county -->
+                      <div class="form-group">
+                          <label for="county">County</label>
+                          <input type="text" placeholder="county" class="form-control county" required="">
+                      </div>
+
+                    </div>
+                    <!-- address section end-->
+
+                    <button type="button" class="btn btn-default" id="addAddress">Add another address</button>
+                    <button type="submit" class="btn btn-primary btn-lg">Submit</button>
+
+
+                </form>
+
+            </div>
+            <!-- form column end -->
+
+            <!-- contacts display column -->
+            <div class="col-xs-12 col-sm-12 col-md-6">
+
+              <div class="col-xs-12 col-sm-12 col-md-6">
+                <ul id="contactList"></ul>
+              </div>
+
+
+              <div class="col-xs-12 col-sm-12 col-md-6" id="contactDetails">
+
+              </div>
+
+
+
+            </div>
+            <!-- contacts display column end -->
+        </div>
+        <!-- main row end-->
+
+
+    </div>
+    <!--Main container end-->
+
+    <!--Js links-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
